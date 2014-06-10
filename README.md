@@ -1,7 +1,7 @@
-Qbaka Angular Plugin
+[Qbaka](https://qbaka.com) Angular Plugin
 =============
 
-AngularJS wraps all your code with try-catch blocks thus preventing Qbaka from tracking exceptions. This plugin listens for Angular errors and reports it to qbaka. 
+[Qbaka](https://qbaka.com) is a SaaS that automatically tracks all JavaScript errors on you web page. AngularJS wraps all your code with try-catch blocks thus preventing [Qbaka](https://qbaka.com) from tracking exceptions. This plugin listens for Angular errors and reports it to qbaka. 
 
 API
 ---
@@ -10,7 +10,7 @@ API
 qbaka.angular = function (app, apiKey);
 ```
 * _app_ This function initialize qbaka with your app module (returned by angular.module function) and
-* _apiKey_ API key from qbaka, 32-hexadecimal code from your snippet provided by Qbaka service
+* _apiKey_ API key from qbaka, 128-bit hexadecimal code from your snippet provided by Qbaka service
 
 Sample
 ----
