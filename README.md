@@ -1,4 +1,28 @@
-qbaka-angular
+Qbaka Angular Plugin
 =============
 
-Angular plugin for Qbaka
+AngularJS wraps all your code with try-catch blocks thus preventing Qbaka from tracking exceptions. This plugin listens for Angular errors and reports it to qbaka. 
+
+API
+---
+
+```JavaScript
+qbaka.angular = function (app, apiKey);
+```
+* _app_ This function initialize qbaka with your app module (returned by angular.module function) and
+* _apiKey_ API key from qbaka, 32-hexadecimal code from your snippet provided by Qbaka service
+
+Sample
+----
+
+```JavaScript
+var app = angular.module('myApp');
+qbaka.angular(app, '1234567890acbdef1234567890acbdef'); // Last parameter is your Qbaka 
+// Continue your stuff
+```
+
+Installation
+------------
+
+* Download qbaka-angular.js from this repository
+* If you use bower, type: ```bower instal qbaka-angular```
