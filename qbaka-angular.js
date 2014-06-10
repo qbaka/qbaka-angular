@@ -1,7 +1,7 @@
 window.qbaka = window.qbaka || {};
 window.qbaka.angular = function (module, apiKey) {
   if (!window.qbaka._) {
-    window.qbaka || (function (window, document) {
+    (function (window, document) {
       var _ = [];
       var qbaka = window.qbaka = function () {
         _.push(arguments);
