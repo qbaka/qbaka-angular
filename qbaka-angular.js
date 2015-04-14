@@ -38,6 +38,10 @@ window.qbaka.angular = function (module, apiKey) {
       trackEvents: true
     };
   }
+  
+  // Argument can be string or an angular module
+  module = typeof module === 'string' ? angular.module(module):module)
+  
   module.factory('$exceptionHandler', function () {
     return function (exception) {
       qbaka.report(exception);
